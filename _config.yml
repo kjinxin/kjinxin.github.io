@@ -33,4 +33,3 @@ markdown: kramdown
 # highlighter: rouge
 # highlighter: false
 
-theme: jekyll-theme-cayman
