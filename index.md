@@ -2,4 +2,4 @@
 layout: frontpage
 ---
 
-## Welcome to Xin Jin's websit 
+## Welcome to Xin Jin 
