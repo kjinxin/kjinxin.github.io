@@ -21,8 +21,8 @@ newsourceroot: https://github.com/kjinxin/kjinxin.github.io/new/master
 #duoshuo_shortname: lixizhi
 #duoshuo_url: "http://lixizhi.github.io"
 # disqus.com commenting system. please note that it is exclusive with duoshuo.com
-disqus_shortname: kjinxin
-disqus_url: "http://kjinxin.com"
+disqus_shortname: lixizhi
+disqus_url: "http://lizizhi.github.io"
 #########################################
 
 # Build settings
