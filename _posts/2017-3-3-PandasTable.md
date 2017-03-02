@@ -6,9 +6,9 @@ categories: Tools
 ---
 ## Reuse the Pandas frame from the Gui
 
-  from tkinter import *
-	from pandastable import Table, TableModel
-	import pandas as pd
+    from tkinter import *
+	  from pandastable import Table, TableModel
+	  import pandas as pd
 
 	class TestApp(Frame):
 	    """Basic test frame for the table"""
