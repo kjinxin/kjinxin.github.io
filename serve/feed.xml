@@ -5,8 +5,8 @@
     <description>Xin Jin's Ideas &amp; Blogs</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>2017-08-26 16:01:47 -0500</pubDate>
-    <lastBuildDate>2017-08-26 16:01:47 -0500</lastBuildDate>
+    <pubDate>2017-08-26 16:11:10 -0500</pubDate>
+    <lastBuildDate>2017-08-26 16:11:10 -0500</lastBuildDate>
     <generator>Jekyll v</generator>
     
       <item>
@@ -17,8 +17,8 @@ vector&amp;lt;string&amp;gt; tokens{ istream_iterator&amp;lt;string&amp;gt;{ss},
 &lt;/code&gt;&lt;/pre&gt;
 </description>
         <pubDate>2017-08-23 00:00:00 -0500</pubDate>
-        <link>/title/2017/08/23/</link>
-        <guid isPermaLink="true">/title/2017/08/23/</guid>
+        <link>/2017/08/23/split-string+with+space/</link>
+        <guid isPermaLink="true">/2017/08/23/split-string+with+space/</guid>
         
         
         <category>C++</category>
@@ -32,8 +32,8 @@ vector&amp;lt;string&amp;gt; tokens{ istream_iterator&amp;lt;string&amp;gt;{ss},
   pay attention that in sort, arr.begin(), arr.end() should be invalid element position. &lt;/int&gt;&lt;/p&gt;
 </description>
         <pubDate>2017-08-23 00:00:00 -0500</pubDate>
-        <link>/title/2017/08/23/</link>
-        <guid isPermaLink="true">/title/2017/08/23/</guid>
+        <link>/2017/08/23/sort/</link>
+        <guid isPermaLink="true">/2017/08/23/sort/</guid>
         
         
         <category>C++</category>
@@ -121,8 +121,8 @@ vector&amp;lt;string&amp;gt; tokens{ istream_iterator&amp;lt;string&amp;gt;{ss},
 &lt;/code&gt;&lt;/pre&gt;
 </description>
         <pubDate>2017-08-16 00:00:00 -0500</pubDate>
-        <link>/title/2017/08/16/</link>
-        <guid isPermaLink="true">/title/2017/08/16/</guid>
+        <link>/2017/08/16/C++-sort/</link>
+        <guid isPermaLink="true">/2017/08/16/C++-sort/</guid>
         
         
         <category>C++</category>
@@ -147,8 +147,8 @@ git checkout -b master4
 git branch –set-upstream master4 remotes/origin/master&lt;/p&gt;
 </description>
         <pubDate>2017-08-15 00:00:00 -0500</pubDate>
-        <link>/title/2017/08/15/</link>
-        <guid isPermaLink="true">/title/2017/08/15/</guid>
+        <link>/2017/08/15/Git-tutorial/</link>
+        <guid isPermaLink="true">/2017/08/15/Git-tutorial/</guid>
         
         
         <category>Tools</category>
@@ -186,8 +186,8 @@ public:
 };&lt;/int&gt;&lt;/p&gt;
 </description>
         <pubDate>2017-07-31 00:00:00 -0500</pubDate>
-        <link>/title/2017/07/31/</link>
-        <guid isPermaLink="true">/title/2017/07/31/</guid>
+        <link>/2017/07/31/LeetCode-611/</link>
+        <guid isPermaLink="true">/2017/07/31/LeetCode-611/</guid>
         
         
         <category>LeetCode</category>
@@ -245,8 +245,8 @@ appnew.mainloop()
 &lt;p&gt;We should keep the pandastable in the class, then after close the Gui, we could make our own change to the take, ex, reopen the Guiand show the table.&lt;/p&gt;
 </description>
         <pubDate>2017-05-30 00:00:00 -0500</pubDate>
-        <link>/title/2017/05/30/</link>
-        <guid isPermaLink="true">/title/2017/05/30/</guid>
+        <link>/2017/05/30/Unix_File_IO/</link>
+        <guid isPermaLink="true">/2017/05/30/Unix_File_IO/</guid>
         
         
         <category>Tools</category>
@@ -259,8 +259,8 @@ appnew.mainloop()
 &lt;p&gt;Why do I always feel sleepy when listening to other guys giving a lecture?&lt;/p&gt;
 </description>
         <pubDate>2017-05-24 00:00:00 -0500</pubDate>
-        <link>/title/2017/05/24/</link>
-        <guid isPermaLink="true">/title/2017/05/24/</guid>
+        <link>/2017/05/24/BOOTCAMP/</link>
+        <guid isPermaLink="true">/2017/05/24/BOOTCAMP/</guid>
         
         
         <category>diary</category>
@@ -275,8 +275,8 @@ appnew.mainloop()
 &lt;/ul&gt;
 </description>
         <pubDate>2017-03-17 00:00:00 -0500</pubDate>
-        <link>/title/2017/03/17/</link>
-        <guid isPermaLink="true">/title/2017/03/17/</guid>
+        <link>/2017/03/17/Tips-of+life/</link>
+        <guid isPermaLink="true">/2017/03/17/Tips-of+life/</guid>
         
         
         <category>diary</category>
@@ -296,8 +296,8 @@ The B+ tree will be simplified in the following five ways:
 5. Finanlly, you can assume that we will never insert two data entries into the index with the same key value.&lt;/p&gt;
 </description>
         <pubDate>2017-03-07 00:00:00 -0600</pubDate>
-        <link>/title/2017/03/07/</link>
-        <guid isPermaLink="true">/title/2017/03/07/</guid>
+        <link>/2017/03/07/B+-Tree/</link>
+        <guid isPermaLink="true">/2017/03/07/B+-Tree/</guid>
         
         
         <category>Algorithm</category>
@@ -355,8 +355,8 @@ appnew.mainloop()
 &lt;p&gt;We should keep the pandastable in the class, then after close the Gui, we could make our own change to the take, ex, reopen the Guiand show the table.&lt;/p&gt;
 </description>
         <pubDate>2017-03-03 00:00:00 -0600</pubDate>
-        <link>/title/2017/03/03/</link>
-        <guid isPermaLink="true">/title/2017/03/03/</guid>
+        <link>/2017/03/03/PandasTable/</link>
+        <guid isPermaLink="true">/2017/03/03/PandasTable/</guid>
         
         
         <category>Tools</category>
