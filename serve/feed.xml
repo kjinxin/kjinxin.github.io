@@ -5,9 +5,76 @@
     <description>Xin Jin's Ideas &amp; Blogs</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>2017-08-26 16:11:10 -0500</pubDate>
-    <lastBuildDate>2017-08-26 16:11:10 -0500</lastBuildDate>
+    <pubDate>2017-08-26 16:55:34 -0500</pubDate>
+    <lastBuildDate>2017-08-26 16:55:34 -0500</lastBuildDate>
     <generator>Jekyll v</generator>
+    
+      <item>
+        <title>Test</title>
+        <description>&lt;h2 id=&quot;life&quot;&gt;Life&lt;/h2&gt;
+&lt;p&gt;text&lt;/p&gt;
+</description>
+        <pubDate>2017-08-26 00:00:00 -0500</pubDate>
+        <link>/Test/Test/</link>
+        <guid isPermaLink="true">/Test/Test/</guid>
+        
+        
+        <category>Test</category>
+        
+      </item>
+    
+      <item>
+        <title>Priority_queue</title>
+        <description>&lt;h2 id=&quot;priorityqueue&quot;&gt;priority_queue&lt;/h2&gt;
+&lt;p&gt;Define a class Compare and overload Operator() like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;class Foo
+{
+
+};
+
+class Compare
+{
+public:
+    bool operator() (Foo, Foo)
+    {
+        return true;
+    }
+};
+
+int main()
+{
+    std::priority_queue&amp;lt;Foo, std::vector&amp;lt;Foo&amp;gt;, Compare&amp;gt; pq;
+    return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If we do not want to define compare class, we could use std::function
+    class Foo
+    {&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;};
+
+bool Compare(Foo, Foo)
+{
+    return true;
+}
+
+int main()
+{
+    std::priority_queue&amp;lt;Foo, std::vector&amp;lt;Foo&amp;gt;, std::function&amp;lt;bool(Foo, Foo)&amp;gt;&amp;gt; pq(Compare);
+    return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+        <pubDate>2017-08-25 00:00:00 -0500</pubDate>
+        <link>/C++/priority_queue/</link>
+        <guid isPermaLink="true">/C++/priority_queue/</guid>
+        
+        
+        <category>C++</category>
+        
+      </item>
     
       <item>
         <title>Split String with space</title>
@@ -17,8 +84,8 @@ vector&amp;lt;string&amp;gt; tokens{ istream_iterator&amp;lt;string&amp;gt;{ss},
 &lt;/code&gt;&lt;/pre&gt;
 </description>
         <pubDate>2017-08-23 00:00:00 -0500</pubDate>
-        <link>/2017/08/23/split-string+with+space/</link>
-        <guid isPermaLink="true">/2017/08/23/split-string+with+space/</guid>
+        <link>/C++/split-string+with+space/</link>
+        <guid isPermaLink="true">/C++/split-string+with+space/</guid>
         
         
         <category>C++</category>
@@ -32,8 +99,8 @@ vector&amp;lt;string&amp;gt; tokens{ istream_iterator&amp;lt;string&amp;gt;{ss},
   pay attention that in sort, arr.begin(), arr.end() should be invalid element position. &lt;/int&gt;&lt;/p&gt;
 </description>
         <pubDate>2017-08-23 00:00:00 -0500</pubDate>
-        <link>/2017/08/23/sort/</link>
-        <guid isPermaLink="true">/2017/08/23/sort/</guid>
+        <link>/C++/sort/</link>
+        <guid isPermaLink="true">/C++/sort/</guid>
         
         
         <category>C++</category>
@@ -121,8 +188,8 @@ vector&amp;lt;string&amp;gt; tokens{ istream_iterator&amp;lt;string&amp;gt;{ss},
 &lt;/code&gt;&lt;/pre&gt;
 </description>
         <pubDate>2017-08-16 00:00:00 -0500</pubDate>
-        <link>/2017/08/16/C++-sort/</link>
-        <guid isPermaLink="true">/2017/08/16/C++-sort/</guid>
+        <link>/C++/C++-sort/</link>
+        <guid isPermaLink="true">/C++/C++-sort/</guid>
         
         
         <category>C++</category>
@@ -147,8 +214,8 @@ git checkout -b master4
 git branch –set-upstream master4 remotes/origin/master&lt;/p&gt;
 </description>
         <pubDate>2017-08-15 00:00:00 -0500</pubDate>
-        <link>/2017/08/15/Git-tutorial/</link>
-        <guid isPermaLink="true">/2017/08/15/Git-tutorial/</guid>
+        <link>/Tools/Git-tutorial/</link>
+        <guid isPermaLink="true">/Tools/Git-tutorial/</guid>
         
         
         <category>Tools</category>
@@ -186,8 +253,8 @@ public:
 };&lt;/int&gt;&lt;/p&gt;
 </description>
         <pubDate>2017-07-31 00:00:00 -0500</pubDate>
-        <link>/2017/07/31/LeetCode-611/</link>
-        <guid isPermaLink="true">/2017/07/31/LeetCode-611/</guid>
+        <link>/LeetCode/LeetCode-611/</link>
+        <guid isPermaLink="true">/LeetCode/LeetCode-611/</guid>
         
         
         <category>LeetCode</category>
@@ -245,8 +312,8 @@ appnew.mainloop()
 &lt;p&gt;We should keep the pandastable in the class, then after close the Gui, we could make our own change to the take, ex, reopen the Guiand show the table.&lt;/p&gt;
 </description>
         <pubDate>2017-05-30 00:00:00 -0500</pubDate>
-        <link>/2017/05/30/Unix_File_IO/</link>
-        <guid isPermaLink="true">/2017/05/30/Unix_File_IO/</guid>
+        <link>/Tools/Unix_File_IO/</link>
+        <guid isPermaLink="true">/Tools/Unix_File_IO/</guid>
         
         
         <category>Tools</category>
@@ -259,8 +326,8 @@ appnew.mainloop()
 &lt;p&gt;Why do I always feel sleepy when listening to other guys giving a lecture?&lt;/p&gt;
 </description>
         <pubDate>2017-05-24 00:00:00 -0500</pubDate>
-        <link>/2017/05/24/BOOTCAMP/</link>
-        <guid isPermaLink="true">/2017/05/24/BOOTCAMP/</guid>
+        <link>/diary/BOOTCAMP/</link>
+        <guid isPermaLink="true">/diary/BOOTCAMP/</guid>
         
         
         <category>diary</category>
@@ -275,91 +342,11 @@ appnew.mainloop()
 &lt;/ul&gt;
 </description>
         <pubDate>2017-03-17 00:00:00 -0500</pubDate>
-        <link>/2017/03/17/Tips-of+life/</link>
-        <guid isPermaLink="true">/2017/03/17/Tips-of+life/</guid>
+        <link>/diary/Tips-of+life/</link>
+        <guid isPermaLink="true">/diary/Tips-of+life/</guid>
         
         
         <category>diary</category>
-        
-      </item>
-    
-      <item>
-        <title>B+ tree in database</title>
-        <description>&lt;h2 id=&quot;b-tree&quot;&gt;B+ tree&lt;/h2&gt;
-
-&lt;p&gt;B+ Tree Index
-The B+ tree will be simplified in the following five ways:
-1. First, you can assume that all records in a file have the same length.
-2. Second, the B+ tree only needs to support single attribute indexing.
-3. Third, the indexed attribute may be one of three data types: integer, double, or string.
-4. Fourth, in the case of a string, you can assume that all string attributes and search keys in BadgerDB are larger than 10 characters, and the firtst 10 characters of each entry that is inserted into the index is unique.
-5. Finanlly, you can assume that we will never insert two data entries into the index with the same key value.&lt;/p&gt;
-</description>
-        <pubDate>2017-03-07 00:00:00 -0600</pubDate>
-        <link>/2017/03/07/B+-Tree/</link>
-        <guid isPermaLink="true">/2017/03/07/B+-Tree/</guid>
-        
-        
-        <category>Algorithm</category>
-        
-      </item>
-    
-      <item>
-        <title>PandasTable</title>
-        <description>&lt;h2 id=&quot;reuse-the-pandas-frame-from-the-gui&quot;&gt;Reuse the Pandas frame from the Gui&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code&gt;from tkinter import *
-  from pandastable import Table, TableModel
-  import pandas as pd
-
-class TestApp(Frame):
-    &quot;&quot;&quot;Basic test frame for the table&quot;&quot;&quot;
-    def __init__(self, parent=None):
-	self.parent = parent
-	Frame.__init__(self)
-	self.main = self.master
-	self.main.geometry('600x400+200+100')
-	self.main.title('Table app')
-	f = Frame(self.main)
-	f.pack(fill=BOTH,expand=1)
-	self.df = df = pd.read_csv('./2.csv')
-	self.table = pt = Table(f, dataframe=df,
-	                        showtoolbar=True, showstatusbar=True)
-	pt.show()
-	return
-
-class TestNew(Frame):
-    &quot;&quot;&quot;Basic test frame for the table&quot;&quot;&quot;
-    def __init__(self, df):
-	self.parent = None
-	Frame.__init__(self)
-	self.main = self.master
-	self.main.geometry('600x400+200+100')
-	self.main.title('Table app')
-	f = Frame(self.main)
-	f.pack(fill=BOTH,expand=1)
-	self.table = pt = Table(f, dataframe=df,
-	                        showtoolbar=True, showstatusbar=True)
-	pt.show()
-	return
-
-app = TestApp()
-
-#launch the app
-app.mainloop()
-
-appnew = TestNew(app.df)
-appnew.mainloop()
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;We should keep the pandastable in the class, then after close the Gui, we could make our own change to the take, ex, reopen the Guiand show the table.&lt;/p&gt;
-</description>
-        <pubDate>2017-03-03 00:00:00 -0600</pubDate>
-        <link>/2017/03/03/PandasTable/</link>
-        <guid isPermaLink="true">/2017/03/03/PandasTable/</guid>
-        
-        
-        <category>Tools</category>
         
       </item>
     

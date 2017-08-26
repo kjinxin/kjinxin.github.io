@@ -5,10 +5,10 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>About</title>
+	<title>Split String with space</title>
 	<meta name="description" content="Xin Jin's Ideas & Blogs">
 	
-	<link rel="canonical" href="/pages/about/">
+	<link rel="canonical" href="/C++/split-string+with+space/">
 	<link rel="alternate" type="application/rss+xml" title="Coding World" href="/feed.xml" />
 	
 	<!-- <link rel="stylesheet" href="/css/main.css"> -->
@@ -74,8 +74,8 @@
         
           
             
-              <li class="active">
-              
+              <li>
+            
             <a href="/pages/about/"><span class="glyphicon "></span> About</a></li>
           
         
@@ -95,66 +95,30 @@
       <div class="row">
   <div id="myArticle" class="col-sm-9">
     <div class="post-area post">
+      <header>
+        <h1>Split String with space</h1>
+        <p>Aug 23, 2017</p>
+      </header>
+      <hr>
       <article>
-        <ul id="markdown-toc">
-  <li><a href="#about-the-site">About the site</a>    <ul>
-      <li><a href="#about-comments">About comments</a></li>
-      <li><a href="#sample-markdowns">Sample markdowns</a></li>
-    </ul>
-  </li>
-</ul>
-
-<h2 id="about-the-site">About the site</h2>
-<p>This is a personal website of Xin Jin, created with github and jekyll. 
-* site <a href="https://github.com/LiXizhi/lixizhi.github.io/blob/master/_config.yml">configuration file</a>
-* Jekyll + <a href="http://lixizhi.duoshuo.com/admin/">lixizhi.duoshuo.com</a>
-* Jekyll + <a href="http://lixizhi.disqus.com/admin/">lixizhi.disqus.com</a>
-* Jekyll theme templates: <a href="http://jekyllthemes.org">jekyllthemes.org</a>
-   * Theme used: <a href="http://jekyllthemes.org/themes/cool-concise-high-end/">cool-concise</a>
-* Jekyll official site: <a href="http://jekyllrb.com">jekyllrb.com</a>
-* YAML for human readable markdown: <a href="http://www.yaml.org/">yaml.org</a>
-* markdown reference: <a href="http://kramdown.gettalong.org/quickref.html">kramdown</a></p>
-
-<h3 id="about-comments">About comments</h3>
-<p>Add a variable called <code>comments</code> to the <a href="http://jekyllrb.com/docs/frontmatter/">YAML front matter</a> and set its value to true. A sample might look like:</p>
-
-<pre><code>---
-layout: post
-comments: true
-# other options
----
-</code></pre>
-
-<h3 id="sample-markdowns">Sample markdowns</h3>
-<p>Click view source at the bottom of the page</p>
-
-<ul>
-  <li>Embedding code</li>
-</ul>
-<div>
-  <pre><code class="lua">local function main()
-	print(&quot;hello world everyone&quot;)
-end</code></pre>
-</div>
-
-<pre><code>good good study,
-day day up,
-try to figure out how it looks like this
+        <h2 id="split-string-with-space">Split string with space</h2>
+<pre><code>istringstream ss(st);
+vector&lt;string&gt; tokens{ istream_iterator&lt;string&gt;{ss}, istream_iterator&lt;string&gt;{}};
 </code></pre>
 
       </article>
       <hr>
-     <div class="bdsharebuttonbox">
-        <a href="#" class="bds_more" data-cmd="more"></a>
-        <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
-        <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
-        <a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a>
-        <a href="#" class="bds_fbook" data-cmd="fbook" title="Share to Facebook"></a>
-        <a href="#" class="bds_copy" data-cmd="copy" title="分享到复制网址"></a>
-    </div>
-    <script>
-        window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
-    </script>
+        <div class="bdsharebuttonbox">
+            <a href="#" class="bds_more" data-cmd="more"></a>
+            <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+            <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+            <a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a>
+            <a href="#" class="bds_fbook" data-cmd="fbook" title="Share to Facebook"></a>
+            <a href="#" class="bds_copy" data-cmd="copy" title="分享到复制网址"></a>
+        </div>
+        <script>
+            window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+        </script>
     </div>
 	
     <!-- duoshuo.com javascript include code. -->    
@@ -166,8 +130,8 @@ try to figure out how it looks like this
     </div>
 	<script>
 		var disqus_config = function () {
-			this.page.url = "http://kjinxin.com/pages/about/"; 
-			this.page.identifier = ""; 
+			this.page.url = "http://kjinxin.com/C++/split-string+with+space/"; 
+			this.page.identifier = "/C++/split-string with space"; 
 		};
 		(function() {
 			var d = document, s = d.createElement('script');
@@ -180,6 +144,7 @@ try to figure out how it looks like this
     
 
   </div>
+  
   <div id="content" class="col-sm-3">
     <!-- <div id="myAffix" class="shadow-bottom-center hidden-xs" data-spy="affix" data-offset-top="0" data-offset-bottom="-20"> -->
     <div id="myAffix" class="shadow-bottom-center hidden-xs" >
@@ -189,6 +154,7 @@ try to figure out how it looks like this
       <div class="content-text"></div>
     </div>
   </div>
+  
 </div>
     </div>
 
