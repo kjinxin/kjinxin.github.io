@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-categories: C++
+categories: Cplus
 ---
 ## priority_queue
 Define a class Compare and overload Operator() like this:
