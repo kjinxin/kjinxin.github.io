@@ -6,13 +6,14 @@
             title = title.replace(" ", "-");
             var currentdate = new Date();
             var urlNewPage = "{{ site.newsourceroot }}?filename=_posts/" 
-                + title + "-" + currentdate.getFullYear() + "-" + (currentdate.getMonth()+1) + "-" + currentdate.getDate() + "-" + ".md";
+                + currentdate.getFullYear() + "-" + (currentdate.getMonth()+1) + "-" + currentdate.getDate() + "-" + title + ".md";
                 
             var defaultText =  [
                 '---',
                 'layout: post',
                 'comments: true',
                 'categories: diary',
+                'title:' + title, 
                 '---',
                 '## Title',
                 'text'
