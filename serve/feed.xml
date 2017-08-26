@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Coding World</title>
+    <description>Xin Jin's Ideas &amp; Blogs</description>
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>2017-08-26 16:01:47 -0500</pubDate>
+    <lastBuildDate>2017-08-26 16:01:47 -0500</lastBuildDate>
+    <generator>Jekyll v</generator>
+    
+      <item>
+        <title>Split String with space</title>
+        <description>&lt;h2 id=&quot;split-string-with-space&quot;&gt;Split string with space&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;istringstream ss(st);
+vector&amp;lt;string&amp;gt; tokens{ istream_iterator&amp;lt;string&amp;gt;{ss}, istream_iterator&amp;lt;string&amp;gt;{}};
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+        <pubDate>2017-08-23 00:00:00 -0500</pubDate>
+        <link>/title/2017/08/23/</link>
+        <guid isPermaLink="true">/title/2017/08/23/</guid>
+        
+        
+        <category>C++</category>
+        
+      </item>
+    
+      <item>
+        <title>Sort</title>
+        <description>&lt;h2 id=&quot;sort&quot;&gt;sort&lt;/h2&gt;
+&lt;p&gt;sort(arr.begin(), arr.begin() + i, greater&lt;int&gt;());
+  pay attention that in sort, arr.begin(), arr.end() should be invalid element position. &lt;/int&gt;&lt;/p&gt;
+</description>
+        <pubDate>2017-08-23 00:00:00 -0500</pubDate>
+        <link>/title/2017/08/23/</link>
+        <guid isPermaLink="true">/title/2017/08/23/</guid>
+        
+        
+        <category>C++</category>
+        
+      </item>
+    
+      <item>
+        <title>sort function</title>
+        <description>&lt;h2 id=&quot;sort&quot;&gt;Sort&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;    // Complicated Types Sorting Example.
+    // By Zereo 04/22/13
+    #include &amp;lt;iostream&amp;gt;
+    #include &amp;lt;algorithm&amp;gt;
+    #include &amp;lt;vector&amp;gt;
+    #include &amp;lt;string&amp;gt;
+
+    using namespace std;
+
+    struct Person
+    {
+        // Left out making a constructor for simplicity's sake.
+        string name;
+        int age;
+        string favoriteColor;
+    };
+
+    // Sort Container by name function
+    bool sortByName(const Person &amp;amp;lhs, const Person &amp;amp;rhs) { return lhs.name &amp;lt; rhs.name; }
+
+    // Sort Container by age function
+    bool sortByAge(const Person &amp;amp;lhs, const Person &amp;amp;rhs) { return lhs.age &amp;lt; rhs.age; }
+
+    // Sort Container by favorite color
+    // We can just sort alphabetically and then it will group the
+    // color together.
+    bool sortByColor(const Person &amp;amp;lhs, const Person &amp;amp;rhs) { return lhs.favoriteColor &amp;lt; rhs.favoriteColor; }
+
+    // A global const variable to hold how many people to ask for input for.
+    const unsigned numberOfPeople = 2;
+
+    int main()
+    {
+        // Make a vector that holds 5 blank Person Objects
+        vector&amp;lt;Person&amp;gt; people(numberOfPeople);
+
+        // This will ask for user input to populate the container
+        // with 5 different indivuals.
+        for (vector&amp;lt;Person&amp;gt;::size_type i = 0; i != numberOfPeople; ++i)
+        {
+            cout &amp;lt;&amp;lt; &quot;Person #&quot; &amp;lt;&amp;lt; i + 1 &amp;lt;&amp;lt; &quot; name: &quot;;
+            cin &amp;gt;&amp;gt; people[i].name;
+
+            cout &amp;lt;&amp;lt; &quot;Person #&quot; &amp;lt;&amp;lt; i + 1 &amp;lt;&amp;lt; &quot; age: &quot;;
+            cin &amp;gt;&amp;gt; people[i].age;
+
+            cout &amp;lt;&amp;lt; &quot;Person #&quot; &amp;lt;&amp;lt; i + 1 &amp;lt;&amp;lt; &quot; favorite color: &quot;;
+            cin &amp;gt;&amp;gt; people[i].favoriteColor;
+        }
+
+        cout &amp;lt;&amp;lt; &quot;\n\n&quot;;
+
+        // Sort by name
+        sort(people.begin(), people.end(), sortByName);
+        for (Person &amp;amp;n : people)
+            cout &amp;lt;&amp;lt; n.name &amp;lt;&amp;lt; &quot; &quot;;
+
+        cout &amp;lt;&amp;lt; endl;
+
+        // Sory by age
+        sort(people.begin(), people.end(), sortByAge);
+        for (Person &amp;amp;n : people)
+            cout &amp;lt;&amp;lt; n.age &amp;lt;&amp;lt; &quot; &quot;;
+
+        cout &amp;lt;&amp;lt; endl;
+
+        // Sort by color
+        sort(people.begin(), people.end(), sortByColor);
+        for (Person &amp;amp;n : people)
+            cout &amp;lt;&amp;lt; n.favoriteColor &amp;lt;&amp;lt; &quot; &quot;;
+
+        return 0;
+    }
+    Edit &amp;amp; Run
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+        <pubDate>2017-08-16 00:00:00 -0500</pubDate>
+        <link>/title/2017/08/16/</link>
+        <guid isPermaLink="true">/title/2017/08/16/</guid>
+        
+        
+        <category>C++</category>
+        
+      </item>
+    
+      <item>
+        <title>Git</title>
+        <description>&lt;h2 id=&quot;git-config-set-user-name-and-email-address&quot;&gt;git config: set user name and email address…&lt;/h2&gt;
+
+&lt;p&gt;git config –global user.name “Xin Jin”
+git config –global user.email “xinjin@gmail.com”&lt;/p&gt;
+
+&lt;p&gt;git config –list ::: list all the settings.&lt;/p&gt;
+
+&lt;h2 id=&quot;git-frequently-used-operations&quot;&gt;git frequently used operations&lt;/h2&gt;
+
+&lt;p&gt;git rebase –whitespace=fix HEAD~1
+git rebase -i HEAD~4
+git reset –soft HEAD~1
+git checkout -b master4
+git branch –set-upstream master4 remotes/origin/master&lt;/p&gt;
+</description>
+        <pubDate>2017-08-15 00:00:00 -0500</pubDate>
+        <link>/title/2017/08/15/</link>
+        <guid isPermaLink="true">/title/2017/08/15/</guid>
+        
+        
+        <category>Tools</category>
+        
+      </item>
+    
+      <item>
+        <title>Leetcode 611</title>
+        <description>&lt;h2 id=&quot;section&quot;&gt;611&lt;/h2&gt;
+
+&lt;p&gt;Do not use i &amp;lt; nums.size() - 2 because nums.size() is unsigned int which will become a very large int.
+class Solution {
+public:
+    int triangleNumber(vector&lt;int&gt;&amp;amp; nums) {
+        int result = 0, st, ed;
+        sort(nums.begin(), nums.end());
+        for (int i = 0; i + 2 &amp;lt; nums.size(); i ++) {
+            if (nums[i] == 0) continue;
+            st = i + 1; ed = i + 2;
+            while(ed &amp;lt; nums.size()) {
+                if (nums[i] + nums[st] &amp;gt; nums[ed]) {
+                    ed ++;
+                    if (ed == nums.size()) {
+                        result += (ed - st) * (ed - st - 1) / 2;
+                    }
+                } else {
+                    result += ed - st - 1;
+                    st ++;
+                    if (st == ed) ed ++;
+                }
+            }
+        }
+        return result;
+    }
+};&lt;/int&gt;&lt;/p&gt;
+</description>
+        <pubDate>2017-07-31 00:00:00 -0500</pubDate>
+        <link>/title/2017/07/31/</link>
+        <guid isPermaLink="true">/title/2017/07/31/</guid>
+        
+        
+        <category>LeetCode</category>
+        
+      </item>
+    
+      <item>
+        <title>PandasTable</title>
+        <description>&lt;h2 id=&quot;reuse-the-pandas-frame-from-the-gui&quot;&gt;Reuse the Pandas frame from the Gui&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;from tkinter import *
+  from pandastable import Table, TableModel
+  import pandas as pd
+
+class TestApp(Frame):
+    &quot;&quot;&quot;Basic test frame for the table&quot;&quot;&quot;
+    def __init__(self, parent=None):
+	self.parent = parent
+	Frame.__init__(self)
+	self.main = self.master
+	self.main.geometry('600x400+200+100')
+	self.main.title('Table app')
+	f = Frame(self.main)
+	f.pack(fill=BOTH,expand=1)
+	self.df = df = pd.read_csv('./2.csv')
+	self.table = pt = Table(f, dataframe=df,
+	                        showtoolbar=True, showstatusbar=True)
+	pt.show()
+	return
+
+class TestNew(Frame):
+    &quot;&quot;&quot;Basic test frame for the table&quot;&quot;&quot;
+    def __init__(self, df):
+	self.parent = None
+	Frame.__init__(self)
+	self.main = self.master
+	self.main.geometry('600x400+200+100')
+	self.main.title('Table app')
+	f = Frame(self.main)
+	f.pack(fill=BOTH,expand=1)
+	self.table = pt = Table(f, dataframe=df,
+	                        showtoolbar=True, showstatusbar=True)
+	pt.show()
+	return
+
+app = TestApp()
+
+#launch the app
+app.mainloop()
+
+appnew = TestNew(app.df)
+appnew.mainloop()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;We should keep the pandastable in the class, then after close the Gui, we could make our own change to the take, ex, reopen the Guiand show the table.&lt;/p&gt;
+</description>
+        <pubDate>2017-05-30 00:00:00 -0500</pubDate>
+        <link>/title/2017/05/30/</link>
+        <guid isPermaLink="true">/title/2017/05/30/</guid>
+        
+        
+        <category>Tools</category>
+        
+      </item>
+    
+      <item>
+        <title>Bootcamp</title>
+        <description>&lt;h2 id=&quot;title&quot;&gt;Title&lt;/h2&gt;
+&lt;p&gt;Why do I always feel sleepy when listening to other guys giving a lecture?&lt;/p&gt;
+</description>
+        <pubDate>2017-05-24 00:00:00 -0500</pubDate>
+        <link>/title/2017/05/24/</link>
+        <guid isPermaLink="true">/title/2017/05/24/</guid>
+        
+        
+        <category>diary</category>
+        
+      </item>
+    
+      <item>
+        <title>Tips of life</title>
+        <description>&lt;ul&gt;
+  &lt;li&gt;Always show up.&lt;/li&gt;
+  &lt;li&gt;Face problem instead of skipping it.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>2017-03-17 00:00:00 -0500</pubDate>
+        <link>/title/2017/03/17/</link>
+        <guid isPermaLink="true">/title/2017/03/17/</guid>
+        
+        
+        <category>diary</category>
+        
+      </item>
+    
+      <item>
+        <title>B+ tree in database</title>
+        <description>&lt;h2 id=&quot;b-tree&quot;&gt;B+ tree&lt;/h2&gt;
+
+&lt;p&gt;B+ Tree Index
+The B+ tree will be simplified in the following five ways:
+1. First, you can assume that all records in a file have the same length.
+2. Second, the B+ tree only needs to support single attribute indexing.
+3. Third, the indexed attribute may be one of three data types: integer, double, or string.
+4. Fourth, in the case of a string, you can assume that all string attributes and search keys in BadgerDB are larger than 10 characters, and the firtst 10 characters of each entry that is inserted into the index is unique.
+5. Finanlly, you can assume that we will never insert two data entries into the index with the same key value.&lt;/p&gt;
+</description>
+        <pubDate>2017-03-07 00:00:00 -0600</pubDate>
+        <link>/title/2017/03/07/</link>
+        <guid isPermaLink="true">/title/2017/03/07/</guid>
+        
+        
+        <category>Algorithm</category>
+        
+      </item>
+    
+      <item>
+        <title>PandasTable</title>
+        <description>&lt;h2 id=&quot;reuse-the-pandas-frame-from-the-gui&quot;&gt;Reuse the Pandas frame from the Gui&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;from tkinter import *
+  from pandastable import Table, TableModel
+  import pandas as pd
+
+class TestApp(Frame):
+    &quot;&quot;&quot;Basic test frame for the table&quot;&quot;&quot;
+    def __init__(self, parent=None):
+	self.parent = parent
+	Frame.__init__(self)
+	self.main = self.master
+	self.main.geometry('600x400+200+100')
+	self.main.title('Table app')
+	f = Frame(self.main)
+	f.pack(fill=BOTH,expand=1)
+	self.df = df = pd.read_csv('./2.csv')
+	self.table = pt = Table(f, dataframe=df,
+	                        showtoolbar=True, showstatusbar=True)
+	pt.show()
+	return
+
+class TestNew(Frame):
+    &quot;&quot;&quot;Basic test frame for the table&quot;&quot;&quot;
+    def __init__(self, df):
+	self.parent = None
+	Frame.__init__(self)
+	self.main = self.master
+	self.main.geometry('600x400+200+100')
+	self.main.title('Table app')
+	f = Frame(self.main)
+	f.pack(fill=BOTH,expand=1)
+	self.table = pt = Table(f, dataframe=df,
+	                        showtoolbar=True, showstatusbar=True)
+	pt.show()
+	return
+
+app = TestApp()
+
+#launch the app
+app.mainloop()
+
+appnew = TestNew(app.df)
+appnew.mainloop()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;We should keep the pandastable in the class, then after close the Gui, we could make our own change to the take, ex, reopen the Guiand show the table.&lt;/p&gt;
+</description>
+        <pubDate>2017-03-03 00:00:00 -0600</pubDate>
+        <link>/title/2017/03/03/</link>
+        <guid isPermaLink="true">/title/2017/03/03/</guid>
+        
+        
+        <category>Tools</category>
+        
+      </item>
+    
+  </channel>
+</rss>
