@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-categories: C++
+categories: Cplus
 ---
 ## Split string with space
     istringstream ss(st);
