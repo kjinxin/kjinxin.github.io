@@ -27,6 +27,7 @@ Define a class Compare and overload Operator() like this:
     }
 
 If we do not want to define compare class, we could use std::function
+
     class Foo
     {
 
@@ -40,5 +41,14 @@ If we do not want to define compare class, we could use std::function
     int main()
     {
         std::priority_queue<Foo, std::vector<Foo>, std::function<bool(Foo, Foo)>> pq(Compare);
+        return 0;
+    }
+    
+We could also use lambda function:
+
+    int main()
+    {
+        auto cmp = [](Foo, Foo)->bool{return true};
+        std::priority_queue<Foo, std::vector<Foo>, decltype(cmp)> pq(cmp);
         return 0;
     }
